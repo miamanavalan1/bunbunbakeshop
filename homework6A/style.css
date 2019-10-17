@@ -1,0 +1,816 @@
+h1 {
+color: #696969	;
+padding: 0px;
+/*margin-left: 50px;*/
+margin: auto;
+font-family: 'Sacramento', cursive;
+font-size: 90px;
+/*background-color: white;*/
+display: block;
+text-align: center;
+/*block-size: 100px;*/
+}
+
+body {
+	background-image: url("amy-shamblen-pJ_DCj9KswI-unsplash.jpg ");
+        background-repeat:no-repeat;
+       background-size:cover;
+}
+/*First and second home pages */
+.rightBar {
+	float:right;
+	width: 270px;
+	height: 900px;
+	background-color: #FFF2F5;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left:10px;
+	margin-right: 30px;
+}
+
+/*Product details page*/
+.rightBarDetails {
+	float:right;
+	width: 400px;
+	height: 700px;
+	background-color: #FFF2F5;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left:10px;
+	margin-right: 30px;
+}
+
+.leftBarDetails {
+	float:left;
+	width: 880px;
+	height: 700px;
+	background-color: #FFF2F5;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left:10px;
+	margin-left: 50px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/*First and second home pages */
+.leftBar {
+	float:left;
+	background-color: #FFF2F5;
+	margin-left: 30px;
+
+}
+
+
+/* search bar
+.h2 .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 12px;
+  margin-right: 26px;
+  background: #ddd;
+  font-size: 27px;
+  border: none;
+  cursor: pointer;
+} search bar */
+
+/* Style the search field */
+.form input {
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 12px;
+  border: 3px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.form button {
+  /*float: left; */
+  padding: 10px;
+  background: rgba(245, 146, 169, 1.00);
+  color: white;
+  font-size: 20px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-left: 55px;
+  margin-top: 10px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+
+
+.text{
+color: #696969	;
+/*margin-left: 800px; */
+float:right;
+font-family: 'Patrick Hand', cursive;
+font-size: 30px;
+display: inline-block;
+text-align: center;
+/*width: 250px;
+height: 1000px; */
+padding-top: 0px;
+padding-right: 10px;
+padding-left:10px;
+}
+
+/*Glaze options */
+.GlazeDetails{
+color: #696969	;
+float:right;
+font-family: 'Patrick Hand', cursive;
+font-size: 30px;
+display: inline-block;
+text-align: center;
+padding-top: 0px;
+padding-right: 10px;
+padding-left:10px;
+position:absolute;
+top:120px;
+left:1090px;
+}
+
+/*Quantity options */
+
+.QuantityDetails{
+color: #696969	;
+float:right;
+font-family: 'Patrick Hand', cursive;
+font-size: 30px;
+display: inline-block;
+text-align: center;
+padding-top: 0px;
+padding-right: 10px;
+padding-left:10px;
+position:absolute;
+top:320px;
+left:1090px;
+}
+
+.text2{
+	color: #696969	;
+	/*margin-left: 800px; */
+	float:right;
+	font-family: 'Sacramento', cursive;
+	font-size: 50px;
+	display: inline-block;
+	text-align: center;
+	/*width: 250px;
+	height: 1000px; */
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left:20px;
+	margin-bottom:-30px;
+}
+
+
+
+/* navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(230, 127, 152, 0.56);
+  font-family: 'Patrick Hand', cursive;
+  font-size:20px;
+  color: black;
+}
+
+li {
+  float: right;
+}
+
+
+li a {
+  color: black;
+  display: block;
+  opacity:1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 460px 460px 460px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+	font-family: 'Patrick Hand', cursive;
+}
+
+.addToCart button {
+  padding: 10px;
+  background: rgba(245, 146, 169, 1.00);
+  color: white;
+  font-size: 18px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  font-family: 'Patrick Hand', cursive;
+	height:45.18px;
+	width: 100.68px;
+	margin-top:10px;
+	text-align: center;
+	align-items: stretch;
+	align-self: stretch;
+	justify-content: center;
+}
+
+/*this made clickable link*/
+.addToCart3:link, .addToCart3:visited {
+  background-color: rgba(245, 146, 169, 1.00);
+  color: white;
+	margin-left: 140px;
+	width: 100px;
+  padding: 10px 10px;
+	margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	/*margin-top: 10px;*/
+	border: 1px solid rgba(230, 127, 152, 0.56);
+	font-family: 'Patrick Hand', cursive;
+}
+
+/*all products page*/
+.item1 {
+  grid-row: 1 / 10;
+	height:300px;
+	width:450px;
+}
+/*hovering over products*/
+.overlay {
+  position: absolute;
+  top: 220px;
+  bottom: 0;
+  left: 140px;
+  right: 0;
+  height: 180.18px;
+  width: 211.68px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFF2F5;
+}
+
+.pink-box:hover .overlay {
+  opacity: .8;
+}
+
+.item2 {
+  grid-row: 1 / 10;
+	height:300px;
+	width:450px;
+}
+
+.item3 {
+  grid-row: 1 / 10;
+	height:300px;
+	width:450px;
+}
+
+.item4 {
+  grid-row: 11 / 20;
+	height:300px;
+	width:450px;
+}
+
+.item5 {
+  grid-row: 11 / 20;
+	height:300px;
+	width:450px;
+}
+
+.item6 {
+  grid-row:11 / 20;
+	height:300px;
+	width:450px;
+}
+
+
+/*all products page*/
+.productImageText {
+	color: #696969	;
+	/*margin-left: 800px; */
+	font-family: 'Patrick Hand', cursive;
+	font-size: 24px;
+	display: inline-block;
+	text-align: center;
+	/*width: 250px;
+	height: 1000px; */
+	padding-top: 50px;
+	float:left;
+	padding-right: 10px;
+	padding-left:10px;
+	}
+
+.hoverImageText {
+	color: #696969	;
+	/*margin-left: 800px; */
+	font-family: 'Patrick Hand', cursive;
+	font-size: 18px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left:10px;
+  }
+
+/*Product Details Glaze*/
+.glaze-group button {
+	  background-color: #FFF2F5;
+		font-size: 18px;
+	  color: #696969;
+	  cursor: pointer;
+		border: 1px solid rgba(230, 127, 152, 0.56);
+		text-align:center;
+		width:150px;
+		height:50px;
+		font-family: 'Patrick Hand', cursive;
+	}*/
+
+	.btn2 {
+	  background-color: #FFF2F5;
+		font-size: 18px;
+	  color: #696969;
+		border: 1px solid rgba(230, 127, 152, 0.56);
+		text-align:center;
+		width:150px;
+		height:50px;
+		font-family: 'Patrick Hand', cursive;
+		margin-right:10px;
+	}
+
+	#mySelect select option{
+		display:inline-block;
+
+	}
+
+	.glaze-group {
+  display:inline-block;
+  vertical-align:top;
+  overflow:hidden;
+}
+
+
+	/*Quantity Details Glaze*/
+		.quantity-group button {
+		  background-color: #FFF2F5;
+			font-size: 18px;
+		  color: #696969;
+		  cursor: pointer;
+			border: 1px solid rgba(230, 127, 152, 0.56);
+			text-align:center;
+			width:50px;
+			height:50px;
+			font-family: 'Patrick Hand', cursive;
+		}
+
+/*Product details add to cart */
+		.addToCart2 button {
+		  padding: 10px;
+		  background: rgba(245, 146, 169, 1.00);
+		  color: white;
+		  font-size: 18px;
+		  border: 1px solid grey;
+		  border-left: none; /* Prevent double borders */
+		  cursor: pointer;
+		  font-family: 'Patrick Hand', cursive;
+			height:69.18px;
+			width: 100.68px;
+			margin-top:10px;
+			text-align: center;
+		}
+
+		/*Bun name on product details*/
+		.BunName{
+		color: #696969	;
+		float:right;
+		font-family: 'Patrick Hand', cursive;
+		font-size: 30px;
+		display: inline-block;
+		text-align: center;
+		padding-top: 0px;
+		padding-right: 10px;
+		padding-left:10px;
+		position:absolute;
+		top:120px;
+		left:400px;
+		}
+
+		/*Bun description on product details*/
+		.BunDetails{
+		color: #696969	;
+		font-family: 'Patrick Hand', cursive;
+		font-size: 18px;
+		display: block;
+		text-align: center;
+		padding-top: 0px;
+		padding-right: 10px;
+		padding-left:10px;
+		position:absolute;
+		top:180px;
+		left:160px;
+		}
+
+		/*Decision Details Glaze*/
+			.decision-group button {
+				padding: 10px;
+			  background: rgba(245, 146, 169, 1.00);
+			  color: white;
+			  font-size: 18px;
+			  border: 1px solid grey;
+			  border-left: none; /* Prevent double borders */
+			  cursor: pointer;
+			  font-family: 'Patrick Hand', cursive;
+				height:69.18px;
+				margin-top:10px;
+				text-align: center;
+			}
+
+/*contact form information*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	align-items: center;
+	margin-top: 10px;
+}
+
+input[type=submit] {
+  background-color: #F592A9;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	text-align: center;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #FFF2F5;
+  padding: 20px;
+	margin:10px;
+	text-align: center;
+}
+
+.contact {
+	color: #696969	;
+	padding: 0px;
+	/*margin-left: 50px;*/
+	margin: auto;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 22px;
+	/*background-color: white;*/
+	display: block;
+	text-align: center;
+	/*block-size: 100px;*/
+	}
+.flex-container {
+		background-color: #FFF2F5;
+		margin-left:126px;
+		max-width: 850px;
+	}
+.flex-row {
+	  display: flex;
+	  flex-direction: columns;
+	  flex-wrap: wrap;
+	  justify-content: start;
+	  align-items: center;
+	  align-content: stretch;
+	  box-sizing: border-box;
+	}
+
+.flex-item {
+  margin-right: 0px;
+	margin-left: 30px;
+	justify-content: center;
+}
+
+.flex-item2 {
+  margin-right: 0px;
+	margin-left: 20px;
+	justify-content: center;
+}
+
+.flex-item-stretch {
+  flex: 0 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.max-width-100 {
+	margin: auto;
+  max-width: 120px;
+	max-height:120px;
+}
+
+.flex-item-stretch-3{
+	flex: .79 auto;
+}
+
+.flex-item-stretch-2{
+	flex: .30 auto;
+}
+
+.text1 {
+  padding: 0;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+}
+.text10 {
+  padding: 0;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.highlight-text {
+  font-weight: bold;
+}
+
+.text3{
+color: #696969	;
+/*margin-left: 800px; */
+/*float:right;*/
+font-family: 'Patrick Hand', cursive;
+font-size: 30px;
+display: inline-block;
+text-align: center;
+/*width: 250px;
+height: 1000px; */
+padding-top: 0px;
+padding-right: 10px;
+padding-left:10px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: right;
+  align-content: stretch;
+  box-sizing: border-box;
+	flex: 1 0 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.custom-button {
+  font-family: 'Patrick Hand', cursive;
+  padding: 10px 20px;
+	width: 100px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 15px;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+	margin-left: 10px;
+	margin-right:10px;
+	float:right;
+	background: rgba(245, 146, 169, 1.00);
+  color: white;
+  font-size: 18px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.control-group1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+	margin-left: 0px;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+.custom-button1 {
+  font-family: 'Patrick Hand', cursive;
+  padding: 20px 40px;
+	width: 180px;
+	height:70px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 15px;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+	margin-left: 10px;
+	margin-right:10px;
+	float:right;
+	background: rgba(166, 79, 99, 1.00);
+  color: white;
+  font-size: 18px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.Left-flex-container {
+		background-color: #FFF2F5;
+		margin-left:50px;
+		margin-right:50px;
+		max-width: 650px;
+	}
+
+	.right-flex-container {
+			background-color: #FFF2F5;
+			max-width: 500px;
+			float:right;
+			justify-content:center;
+		}
+
+		.flex-item-img {
+		  margin-right: 0px;
+			margin-left: 0px;
+			justify-content: center;
+		}
+
+		.flex-row-between-two {
+		  display: flex;
+		  flex-direction: row;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  align-items: center;
+		  align-content: stretch;
+		  box-sizing: border-box;
+		}
+
+		.max-width-900 {
+			margin: auto;
+		  max-width: 900px;
+			max-height:700px;
+		}
+
+		.image {
+		  border-radius: 2px;
+		  width: 600px;
+		}
+
+		.flex-item-buns {
+		  margin-right: 0px;
+			margin-left: 25px;
+		}
+
+		.flex-column {
+		  display: flex;
+		  flex-direction: column;
+		  flex-wrap: wrap;
+		  justify-content: flex-start;
+		  align-content: stretch;
+		  box-sizing: border-box;
+		}
+
+		.background-pg {
+		  margin: 15px;
+		}
+
+		.Rrow {
+		  display: flex;
+		  flex-direction: row;
+		  flex-wrap: wrap;
+		  width: 100%;
+		}
+
+		.Rcolumn {
+		  display: flex;
+		  flex-direction: column;
+		  flex-basis: 100%;
+			background-color: #FFF2F5;
+		  flex: 1
+
+		}
+
+		.pink-column {
+		  background-color: #FFF2F5;
+		  height: 100px;
+			text-align: center;
+		}
+
+		.pink-column2 {
+		  background-color: #FFF2F5;
+		  height: 600px;
+			text-align: center;
+		}
+
+
+
+		.double-column {
+		  display: flex;
+		  flex-direction: column;
+		  flex-basis: 100%;
+		  flex: 2
+		}
+
+.buns-img{
+	margin-left:20px;
+	margin-right:20px;
+	margin-top: 30px;
+}
+
+.page-wrapper {
+  margin: 15px;
+  background-color: red;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+	max-height: 300px;
+	justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+	justify-content: center;
+	max-height:300px;
+}
+
+.pink-box {
+  background: rgba(255, 255, 255, 0.3);
+  height: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+	justify-content: center;
+  align-items: center;
+}
+.image-center {
+  align-self: center;
+	margin-left:70px;
+}
+
+.producttext{
+color: #696969	;
+margin-right: 55px;
+font-family: 'Patrick Hand', cursive;
+font-size: 30px;
+display: flex;
+text-align: center;
+align-items: stretch;
+align-self: stretch;
+justify-content: center;
+/*width: 250px;
+height: 1000px; */
+}
+
+.addToCart{
+	text-align: center;
+}
+
+.rowDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+	max-height: 300px;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	margin-right:5px;
+}
