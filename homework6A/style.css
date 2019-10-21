@@ -343,7 +343,7 @@ li a {
 		width:150px;
 		height:50px;
 		font-family: 'Patrick Hand', cursive;
-	}*/
+	}
 
 	.btn2 {
 	  background-color: #FFF2F5;
@@ -496,7 +496,6 @@ input[type=submit] {
 	}
 .flex-row {
 	  display: flex;
-	  flex-direction: columns;
 	  flex-wrap: wrap;
 	  justify-content: start;
 	  align-items: center;

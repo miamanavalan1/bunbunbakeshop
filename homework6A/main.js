@@ -1,3 +1,5 @@
+//new code added
+//
 var count=0;
 function changeCartNumber2(){
   if (clickedobject != null && clickedobject2 !=null) {
