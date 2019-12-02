@@ -1,0 +1,488 @@
+/*html {
+  background-image:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);
+  background-repeat:repeat;
+  background-size: cover;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin-top: 30px;
+    text-align: center;
+    z-index:1000;
+    color:white;
+    font-size: 30px;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+/*.background{
+  max-width: 900px;
+  max-height:1200px;
+  background-image:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);
+  background-repeat:repeat;
+  background-size: cover;
+} */
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  min-width: 900px;
+  min-height:900px;
+  display:block;
+}
+
+.title {
+  font-family: 'Bungee Inline', cursive;
+  color: #81AEAB;
+  font-size: 40px;
+  /*margin-top:60vh;
+  opacity:.999; */
+  z-index: 10;
+    /*display: block;
+  margin: auto;
+  /*text-align:center;
+  /*margin: auto; */
+  /*width: 20%;
+  /*border: 1px solid #73AD21; */
+  /*padding-top: 20vh;
+  /*vertical-align: middle; */
+  /*animation-name: fadeIn;
+  animation-duration: 5s;*/
+  display: grid;
+  place-items: center;
+
+}
+
+body {
+	background-image:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);
+        background-repeat:repeat;
+       background-size:cover;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  height: 100vh;
+  display:block;
+  width:100%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(blueclouds2.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  /*-ms-flex: 50%; IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.hover-img {
+    position: relative;
+    width: 400px; height: 400px;
+    z-index:10;
+}
+
+#title2 {
+    max-width: 40%; max-height: 40%;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    padding: 0px;
+    margin: 0px;
+    animation: lightSpeedIn 10s;/*, heartBeat 10s;*/
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+/* moon */
+#title3 {
+    max-width: 20%; max-height: 20%;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+    position: fixed;
+    top: 0px;
+    right: 3px;
+    z-index: 10;
+    padding: 0px;
+    margin: 4px;
+    animation: fadeIn 10s;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    transition: transform .2s; /* Animation */
+}
+
+#title3:hover {
+  transform: scale(1.3);
+}
+
+#container {
+  perspective: 30px;
+}
+
+#inner {
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+}
+
+/*============================================================
+ * EXTRAS
+ *============================================================*/
+
+#container:hover .demo-overlay {
+  opacity: 1;
+}
+
+#container:hover {
+  cursor: pointer;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+/* .demo-overlay {
+  width: 25em;
+  padding: 10em 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.4s;
+} */
+
+.demo-overlay svg {
+  display: block;
+  margin: 0 auto;
+  fill: white;
+}
+.hover-img > img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+}
+
+.hover-img2 {
+    position: relative;
+    width: 220px; height: 250px;
+    z-index:10;
+}
+.hover-img2 > img {
+    position: absolute;
+    top: 0; left: 400;
+    width: 220px; height: 250px;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+}
+
+.hover-img3 {
+    position: relative;
+    width: 280px; height: 280px;
+    z-index:10;
+}
+.hover-img3 > img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 280px; height: 280px;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+}
+
+.hover-img4 {
+    position: relative;
+    width: 230px; height: 230px;
+    z-index:10;
+}
+.hover-img4 > img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 230px; height: 230px;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+}
+
+.hover-img5 {
+    position: relative;
+    width: 280px; height: 280px;
+    z-index:10;
+}
+.hover-img5 > img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 280px; height: 280px;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+}
+
+.hover-img6 {
+    position: relative;
+    width: 170px; height: 170px;
+    z-index:10;
+}
+.hover-img6 > img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 170px; height: 170px;
+    z-index:10;/* Assuming that both images have the same dimensions - in thise case, 500x500 */
+}
+
+.hover-img > #newAquarius {
+    opacity: 0;
+    z-index:10;
+}
+.hover-img:hover > #newAquarius {
+    opacity: 1;
+    z-index:10;
+}
+
+.hover-img > #Aquarius {
+    opacity: 1;
+    z-index:10;
+}
+.hover-img:hover > #Aquarius {
+    opacity: 0;
+    z-index:10;
+}
+
+.hover-img2 > #newAquilla {
+    opacity: 0;
+    z-index:10;
+}
+.hover-img2:hover > #newAquilla {
+    opacity: 1;
+    z-index:10;
+}
+
+.hover-img2 > #Aquilla {
+    opacity: 1;
+    z-index:10;
+}
+.hover-img2:hover > #Aquilla {
+    opacity: 0;
+}
+
+.hover-img3 > #newCapricornus {
+    opacity: 0;
+    z-index:10;
+}
+.hover-img3:hover > #newCapricornus {
+    opacity: 1;
+    z-index:10;
+}
+
+.hover-img3 > #Capricornus {
+    opacity: 1;
+    z-index:10;
+}
+.hover-img3:hover > #Capricornus {
+    opacity: 0;
+}
+
+.hover-img4 > #newSagittarius {
+    opacity: 0;
+    z-index:10;
+}
+.hover-img4:hover > #newSagittarius {
+    opacity: 1;
+    z-index:10;
+}
+
+.hover-img4 > #Sagittarius {
+    opacity: 1;
+    z-index:10;
+}
+.hover-img4:hover > #Sagittarius {
+    opacity: 0;
+}
+
+.hover-img5 > #newPisces {
+    opacity: 0;
+    z-index:10;
+}
+.hover-img5:hover > #newPisces {
+    opacity: 1;
+    z-index:10;
+}
+
+.hover-img5 > #Pisces {
+    opacity: 1;
+    z-index:10;
+}
+.hover-img5:hover > #Pisces {
+    opacity: 0;
+}
+
+.hover-img6 > #newScutum {
+    opacity: 0;
+    z-index:10;
+}
+.hover-img6:hover > #newScutum  {
+    opacity: 1;
+    z-index:10;
+}
+
+.hover-img6 > #Scutum {
+    opacity: 1;
+    z-index:10;
+}
+.hover-img6:hover > #Scutum {
+    opacity: 0;
+}
