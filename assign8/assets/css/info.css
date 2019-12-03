@@ -68,8 +68,9 @@ canvas {
    	position: absolute;
    	opacity: 0;
    	overflow: hidden;
-   	width: 100%;
+   	width: 80%;
    	color: #6b969d;
+    margin-bottom:20px;
    }
 
    .rw-words-1 span{
