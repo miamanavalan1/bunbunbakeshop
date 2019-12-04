@@ -10,22 +10,6 @@
 }
 }
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100 vh;
-  z-index:2
-}
-
-
 * {
   box-sizing: border-box;
 }
@@ -206,6 +190,7 @@ body {
   z-index:0;
 }
 
+/* stars twinkling */
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat;
   z-index:1;
@@ -217,8 +202,9 @@ body {
   animation:move-twink-back 200s linear infinite;
 }
 
+/*Clouds moving */
 .clouds{
-    background:transparent url(blueclouds2.png) repeat top center;
+    background:transparent url(../images/blueclouds2.png) repeat top center;
     z-index:3;
 
   -moz-animation:move-clouds-back 200s linear infinite;
@@ -228,7 +214,7 @@ body {
   animation:move-clouds-back 200s linear infinite;
 }
 
-/* moon */
+/* hovering over moon */
 #title3 {
     width: 150px; height: 150px;
     z-index:2200;/* Assuming that both images have the same dimensions - in thise case, 500x500 */

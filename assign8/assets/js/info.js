@@ -1,3 +1,6 @@
+//stars moving around
+//source code: https://codepen.io/jasperchow5915/pen/OJJrWwY
+
 particlesJS("particles-js", {
   "particles": {
     "number": {

@@ -25,13 +25,15 @@ canvas {
 
 
 /* ---- particles.js container ---- */
-
+/* source code for twinkling stars https://codepen.io/jasperchow5915/pen/OJJrWwY */
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
+
+/*rotating text: https://tympanus.net/codrops/2012/04/17/rotating-words-with-css-animations/ */
 .rw-wrapper{
    	width: 80%;
    	position: relative;
